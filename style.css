@@ -29,7 +29,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,88,1) 35%, rgba
   width: 250px;
   height: 250px;
   transform-style: preserve-3d;
-  animation: rotation 9s infinite linear;
+  animation: rotation 10s infinite linear;
 }
 
 @keyframes rotation {
@@ -49,19 +49,21 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,88,1) 35%, rgba
   transform: rotateX(-360deg);
   }
 60% {
- transform: rotateY(-90deg);
+ transform: rotateY(360deg);
   }
 70% {
-transform: rotateY(-180deg);
+transform: rotateY(270deg);
   }
 80% {
-transform: rotateY(-270deg);
+transform: rotateY(180deg);
   }
 90% {
-transform: rotateY(-360deg);
+transform: rotateY(90deg);
   }
+100% {
+    transform: rotateY(0deg);
+      }
 }
-
 .cube__face {
   width:250px;
   height: 250px;
